@@ -8,16 +8,13 @@
 
 bool sorted(std::string filename)
 {
-
-	std::ifstream infile; // hämtar från en fil
-
+	std::ifstream infile; 
 	infile.open(filename);
 
 	int a, b;
 
 	infile >> a;
-
-
+	
 	while (!infile.eof())
 
 	{
@@ -26,19 +23,12 @@ bool sorted(std::string filename)
 
 		if (a > b)
 		{
-
-
 			return false;
-
 		}
 
 		a = b;
-
 	}
-
 	infile.close();
-
-
 	return true;
 
 
