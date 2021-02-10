@@ -14,14 +14,10 @@ DT028G
 
 int main()
 {
-
 	std::cout << "is A1 sorted? " << std::boolalpha << sorted("A1") << std::endl;
 	std::cout << "is A sorted? " << sorted("A") << std::endl;
 	std::cout << "is B sorted? " << sorted("B") << std::endl;
-
-
 	merge("A", "B", "C");
-
 
 	return 0;
 }
